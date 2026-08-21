@@ -13,7 +13,7 @@ import re
 @st.cache_resource
 def load_embeddings():
     return  HuggingFaceEmbeddings(
-                    model = "sentence-transformers/all-MiniLM-L6-v2"
+                    model = "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"
                 )
 
 embeddings_model = load_embeddings()
